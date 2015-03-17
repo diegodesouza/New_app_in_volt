@@ -3,6 +3,11 @@ class MainController < Volt::ModelController
 
   model :store
 
+  def add_thing
+    _things << { name: page._new_thing }
+    page._new_thing = ""
+  end
+
   def index
     # Add code for when the index view is loaded
   end
