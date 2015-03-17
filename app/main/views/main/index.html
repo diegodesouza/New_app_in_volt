@@ -7,5 +7,8 @@
   <ul>
     {{ _things.each do |thing|}}
     <li>{{ thing._name}}</li>
-    {{end}}  
+    {{end}}
   </ul>
+  <label>New Thing</label>
+  <input value="{{ page._name_thing }}"/>
+  <input tyep="button" value="Add Thing" e-click="add_thing"/>
