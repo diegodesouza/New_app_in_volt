@@ -1,0 +1,11 @@
+<:Title>
+  Home
+
+<:Body>
+  <h1>Home Sweet Home</h1>
+
+  <ul>
+    {{ _things.each do |thing|}}
+    <li>{{ thing._name}}</li>
+    {{end}}  
+  </ul>
