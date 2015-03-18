@@ -5,10 +5,10 @@
   <h1>Home Sweet Home</h1>
 
   <ul>
-    {{ _things.each do |thing|}}
-    <li>{{ thing._name}}</li>
+    {{ _things.each do |thing| }}
+    <li>{{ thing._name }}</li>
     {{end}}
   </ul>
   <label>New Thing</label>
   <input value="{{ page._name_thing }}"/>
-  <input tyep="button" value="Add Thing" e-click="add_thing"/>
+  <input type="button" value="Add Thing" e-click="add_thing"/>
